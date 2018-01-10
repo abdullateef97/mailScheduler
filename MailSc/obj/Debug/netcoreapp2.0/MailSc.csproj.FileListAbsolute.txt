@@ -1,0 +1,10 @@
+/home/belle/RiderProjects/MailSc/MailSc/bin/Debug/netcoreapp2.0/MailSc.deps.json
+/home/belle/RiderProjects/MailSc/MailSc/bin/Debug/netcoreapp2.0/MailSc.runtimeconfig.json
+/home/belle/RiderProjects/MailSc/MailSc/bin/Debug/netcoreapp2.0/MailSc.runtimeconfig.dev.json
+/home/belle/RiderProjects/MailSc/MailSc/bin/Debug/netcoreapp2.0/MailSc.dll
+/home/belle/RiderProjects/MailSc/MailSc/bin/Debug/netcoreapp2.0/MailSc.pdb
+/home/belle/RiderProjects/MailSc/MailSc/obj/Debug/netcoreapp2.0/MailSc.csproj.CoreCompileInputs.cache
+/home/belle/RiderProjects/MailSc/MailSc/obj/Debug/netcoreapp2.0/MailSc.AssemblyInfoInputs.cache
+/home/belle/RiderProjects/MailSc/MailSc/obj/Debug/netcoreapp2.0/MailSc.AssemblyInfo.cs
+/home/belle/RiderProjects/MailSc/MailSc/obj/Debug/netcoreapp2.0/MailSc.dll
+/home/belle/RiderProjects/MailSc/MailSc/obj/Debug/netcoreapp2.0/MailSc.pdb

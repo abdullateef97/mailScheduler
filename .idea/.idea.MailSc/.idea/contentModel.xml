@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.Rider2017.2/system/resharper-host/local/Transient/ReSharperHost/v10/SolutionCaches/_MailSc.-1573455494.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="MailSc" t="IncludeRecursive">
+        <e p="Data" t="Include">
+          <e p="DbInitializer.cs" t="Include" />
+          <e p="MailContext.cs" t="Include" />
+        </e>
+        <e p="MailHelper.cs" t="Include" />
+        <e p="MailSc.csproj" t="IncludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20180109115259_InitialMigration.Designer.cs" t="Include" />
+          <e p="20180109115259_InitialMigration.cs" t="Include" />
+          <e p="MailContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Email.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Startup.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.0" t="Include">
+              <e p="MailSc.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="MailSc.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
