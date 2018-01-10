@@ -25,8 +25,8 @@ namespace MailSc
             {
                 Credentials = new NetworkCredential
                 {
-                    UserName = "adeniranyusufabdullateef@gmail.com",
-                    Password = "abdlatol97"
+                    UserName = new configViewModel().username,
+                    Password = new configViewModel().password
                 },
                 EnableSsl = true
             };
