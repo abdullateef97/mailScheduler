@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Threading.Tasks;
 using MailSc.Data;
 using Microsoft.EntityFrameworkCore;
 using Quartz;
@@ -12,7 +13,7 @@ namespace MailSc{
         {
             _context = context;
         }
-        public void Execute(IJobExecutionContext context)
+        public async Task Execute(IJobExecutionContext context)
         {
             FetchUsersAndSendMail();
         }

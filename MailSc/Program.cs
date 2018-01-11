@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Data.Entity;
 using System.Linq;
+using System.Threading.Tasks;
 using MailSc.Data;
+using Quartz;
+using Quartz.Impl;
 
 namespace MailSc
 {
@@ -16,8 +19,23 @@ namespace MailSc
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            Start();
         }
 
+        private static void Start()
+        {
+            var scheduler = StdSchedulerFactory.GetDefaultScheduler();
+            scheduler.Start();
 
+            var job = JobBuilder.Create<mailJob>().Build();
+            var trigger = TriggerBuilder.Create()
+                .WithIdentity("mailJob", "mail")
+                .WithCronSchedule("	0 0 0 1/1 * ? *")
+                .StartAt(DateTime.UtcNow)
+                .WithPriority(1)
+                .Build();
+            scheduler.ScheduleJob(job, trigger);
+                
+        }
     }
 }
