@@ -18,13 +18,6 @@ namespace MailSc
             Console.WriteLine("Hello World!");
         }
 
-        public void FetchUsersAndSendMail()
-        {
-            var users = _context.Emails.AsNoTracking().ToList();
-            foreach (var user in users)
-            {
-                new MailHelper().sendMail(user);
-            }
-        }
+
     }
 }
