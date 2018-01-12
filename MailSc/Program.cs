@@ -22,10 +22,10 @@ namespace MailSc
             Start();
         }
 
-        private static void Start()
+        private static async  void Start()
         {
-            var scheduler = StdSchedulerFactory.GetDefaultScheduler();
-            scheduler.Start();
+           IScheduler scheduler = await StdSchedulerFactory.GetDefaultScheduler();
+            await scheduler.Start();
 
             var job = JobBuilder.Create<mailJob>().Build();
             var trigger = TriggerBuilder.Create()
@@ -34,7 +34,8 @@ namespace MailSc
                 .StartAt(DateTime.UtcNow)
                 .WithPriority(1)
                 .Build();
-            scheduler.ScheduleJob(job, trigger);
+           await scheduler.ScheduleJob(job, trigger);
+
                 
         }
     }
